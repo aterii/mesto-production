@@ -46,19 +46,18 @@
           <button type="button" class="popup__close"></button>
           <h3 class="popup__title">Редактировать профиль</h3>
           <form class="popup__form" name="edit-profile" novalidate>
-            <label class="popup__label">
               <input
                 type="text"
                 name="user-name"
                 id="user-name"
                 class="popup__input popup__input_type_name"
                 placeholder="Имя"
-                pattern="^[a-zA-Zа-яА-ЯёЁ\-]+$"
-                minlength="3"
-                maxlength="42"
+                pattern="^[a-zA-Zа-яА-ЯёЁ \-]+$"
+                minlength="2"
+                maxlength="40"
+                required
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
-            </label>
             <span class="popup__error" id="user-name-error"></span>
             
             <label class="popup__label">
@@ -94,9 +93,9 @@
                 id="place-name"
                 class="popup__input popup__input_type_card-name"
                 placeholder="Название"
-                pattern="^[a-zA-Zа-яА-ЯёЁ\-]+$"
-                minlength="3"
-                maxlength="42"
+                pattern="^[a-zA-Zа-яА-ЯёЁ \-]+$"
+                minlength="2"
+                maxlength="30"
                 required
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
